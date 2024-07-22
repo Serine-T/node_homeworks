@@ -8,7 +8,6 @@ const GREETINGS = {
   en: 'Hello',
   am: 'Բարև',
   es: 'Hola',
-  fr: 'Bonjour',
 };
 
 const getCurrentDate = () => {
