@@ -1,3 +1,6 @@
+### Run application
+npm run dev  
+
 ### Testing the API
 You can test the creation and updating logic by using Postman. The following API operations are available:
 
