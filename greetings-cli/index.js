@@ -20,14 +20,14 @@ const getDayOfWeek = () => {
 
 const getGreeting = (name, greeting, level, language) => {
   const greet = greeting !== DEFAULT_GREETING ? greeting : GREETINGS[language] || GREETINGS[DEFAULT_LANGUAGE];
-  let message = `${greet}, ${name}!`;
+  
   if (level >= 2) {
-    message += ` (Date and Time: ${getCurrentDate()})`;
+    return `${message} (Date and Time: ${getCurrentDate()})`;
   }
   if (level >= 3) {
-    message += ` (Day of the Week: ${getDayOfWeek()})`;
+    return  `${message} (Day of the Week: ${getDayOfWeek()})`;
   }
-  return message;
+  return  `${greet}, ${name}!`;
 };
 
 const parseArgs = () => {
