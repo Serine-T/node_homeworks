@@ -1,2 +1,2 @@
 ## Run application
-npx ts-node src/app.ts
+npm run dev
