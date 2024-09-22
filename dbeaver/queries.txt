@@ -1,0 +1,44 @@
+### Queries by which tables has been created in database
+
+CREATE TABLE Directors (
+    DirectorID SERIAL PRIMARY KEY,
+    Name VARCHAR(100),
+    Nationality VARCHAR(100),
+    DOB DATE
+);
+
+
+CREATE TABLE Actors (
+    ActorID SERIAL PRIMARY KEY,
+    Name VARCHAR(100),
+    Nationality VARCHAR(100),
+    DOB DATE
+);
+
+
+CREATE TABLE Genres (
+    GenreID SERIAL PRIMARY KEY,
+    GenreName VARCHAR(100)
+);
+
+CREATE TABLE Ratings (
+    MovieID INT,
+    Rating DECIMAL(3,2),
+    FOREIGN KEY (MovieID) REFERENCES Movies(MovieID) ON DELETE CASCADE
+);
+
+CREATE TABLE Movies (
+    MovieID SERIAL PRIMARY KEY,
+    Title VARCHAR(200),
+    ReleaseYear INT,
+    DirectorID INT,
+    FOREIGN KEY (DirectorID) REFERENCES Directors(DirectorID)
+);
+
+CREATE TABLE MovieGenres (
+    MovieID INT,
+    GenreID INT,
+    FOREIGN KEY (MovieID) REFERENCES Movies(MovieID),
+    FOREIGN KEY (GenreID) REFERENCES Genres(GenreID),
+    PRIMARY KEY (MovieID, GenreID)
+);
