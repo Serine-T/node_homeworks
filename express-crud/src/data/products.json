@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "category": "electronics",
+    "price": 1000,
+    "stock": {
+      "available": 10
+    },
+    "manufacturer": {
+      "address": {
+        "street": "123 Tech Ave"
+      }
+    },
+    "deleted": false
+  },
+  {
+    "id": 2,
+    "name": "Macbook",
+    "category": "electronics",
+    "price": 2000,
+    "stock": {
+      "available": 7
+    },
+    "manufacturer": {
+      "address": {
+        "street": "123 Tech Ave"
+      }
+    },
+    "deleted": false
+  },
+  {
+    "id": 3,
+    "name": "Smartphone",
+    "category": "electronics",
+    "price": 800,
+    "stock": {
+      "available": 20
+    },
+    "manufacturer": {
+      "address": {
+        "street": "456 Tech Blvd"
+      }
+    },
+    "deleted": false
+  },
+  {
+    "id": 4,
+    "name": "Smartphone",
+    "category": "electronics",
+    "price": 800,
+    "stock": {
+      "available": 20
+    },
+    "manufacturer": {
+      "address": {
+        "street": "456 Tech Blvd"
+      }
+    },
+    "deleted": false
+  }
+]
